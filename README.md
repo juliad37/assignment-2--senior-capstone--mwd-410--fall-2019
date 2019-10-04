@@ -15,3 +15,50 @@ In the next two-week sprint of your project, you and your team will co-ordinate 
 ## The Rules
 ### Repo Structure
 The ownership and collaboration structure implemented for the first assignment will persist throughout this and all subsequent assignments. Thus, links to your assignments needn’t be submitted.
+
+### Sprint Planning
+* With your team-mate(s), plan your sprint and file issues for each of the items listed below. Employ the sprint- and issue-filing conventions and rules defined for the first assignment.
+* Unless otherwise stated, each of the issue filed in ZenHub must be agreed on as a team.
+* Divide the work evenly across all team members.
+
+### Linters
+* Settle on editorconfig settings and add a `.editorconfig` file to the root of your project.
+* Settle on ESLint settings and add a `.eslintrc` file to the root of your project.
+* Settle on Sass Lint settings and add a `.sass-lint.yml` file to the root of your project.
+
+**Note**:  If your editor requires a plug-in to use editorconfig, ESLint, and/or Sass Lint, install it/them.
+### Task Running
+You must employ Gulp as the task runner for your project. You must create two tracks: one for development and one for production.
+
+#### Development Track
+* The development track must lint HTML, Sass, and JavaScript. It must also refresh the browser when any of these files have changed.
+* All the files and folders must be included in a folder called `app`.
+* `gulp dev` should trigger the development track.
+
+#### Production Track
+* The production track must lint all the aforementioned languages, but also compress them. It should also compress images.
+* All the production files should be written to a folder called `prod`.
+* Git must ignore everything in the production track.
+* `gulp build` should trigger the production track and generate the `prod` folder.
+
+### JSON Database File
+* Format the entire key-value structure of your data, such as usernames, passwords, prefernces, etc, as JSON in a file called `data.json`.
+* Place `data.json` in the root of your project.
+
+## Due Date
+⏰ **Friday, 18 October 2019, at 8:00 AM. 🚫 _No late work will be accepted._**
+
+## Submission
+All the files for this assignment must be included in the owner’s repo. Furthermore, copies of all files must be added to the fork of each member’s personal branch of this repo and submitted individually as a pull request. [Look at these videos](http://code-warrior.github.io/tutorials/git/github/) for help on how to issue a pull request.
+
+**Note**: This assignment may *only* be submitted via GitHub. 🚫 **_No other form of submission will be accepted_**.
+
+## Grading
+| Item                                                        | Points |
+|-------------------------------------------------------------|:------:|
+| *Clarity and quality of ZenHub issues*                      | `20`   |
+| *Clarity and quality of sprint details*                     | `20`   |
+| *Linters configured and employed*                           | `10`   |
+| *Gulp properly employed for development*                    | `10`   |
+| *Gulp properly employed for the production build*           | `10`   |
+| *`data.json` is logical and error-free*                     | `30`   |
