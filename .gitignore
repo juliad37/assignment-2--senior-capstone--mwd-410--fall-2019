@@ -1,7 +1,11 @@
-*
+.DS_Store
+.browserslistrc
+.idea/
+node_modules/
+prod/
 
 !.gitignore
 !README.md
-!links-to-student-repos-containing-initial-sprint.md
 !data.json
 !app/
+
